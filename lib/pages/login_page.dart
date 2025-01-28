@@ -128,6 +128,7 @@ class _LoginPageState extends State<LoginPage> {
     //trigger the validator function for each of the field.
     print(_loginFormKey.currentState!.validate());
     if (_loginFormKey.currentState!.validate()) {
+      Navigator.pushNamed(context, 'home');
       // _loginFormKey.currentState!.save();
       // bool _result = await _firebaseService!
       //     .loginUser(email: _email!, password: _password!);
